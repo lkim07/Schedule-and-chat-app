@@ -1,0 +1,27 @@
+# name: Deploy to Azure VM
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout Repository
+#       uses: actions/checkout@v2
+
+#     - name: Set up Azure CLI
+#       uses: azure/login@v1
+#       with:
+#         creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+#     - name: Deploy to Azure VM
+#       run: |
+#         # Add your deployment commands here
+#         # Example: SSH into the Azure VM and pull the latest code
+#         ssh -o StrictHostKeyChecking=no azureuser@your-vm-ip 'cd /path/to/your/app && git pull origin main && ./deploy_script.sh'
+
+#     - name: Logout of Azure CLI
+#       run: az logout

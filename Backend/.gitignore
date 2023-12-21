@@ -1,0 +1,16 @@
+**/node_modules/**
+.DS_Store
+/client/
+/unused/
+**/keys/**
+**/coverage/**
+**/.env
+my-ftdc.pp
+my-ftdc.te
+my-pm2.pp
+my-pm2.te
+my-sudo.pp
+my-sudo.te
+my-systemd.pp
+my-systemd.te
+nohup.out
